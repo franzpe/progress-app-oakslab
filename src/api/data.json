@@ -1,0 +1,17 @@
+{
+  "categories": [
+    { "id": 1, "name": "Foundation" },
+    { "id": 2, "name": "Discovery" },
+    { "id": 3, "name": "Delivery" }
+  ],
+  "tasks": [
+    { "id": 1, "categoryId": 1, "name": "Setup virtual office", "isCompleted": false },
+    { "id": 2, "categoryId": 1, "name": "Set mission & vision", "isCompleted": false },
+    { "id": 3, "categoryId": 1, "name": "Select business name", "isCompleted": false },
+    { "id": 4, "categoryId": 1, "name": "Buy domains", "isCompleted": false },
+    { "id": 5, "categoryId": 2, "name": "Create roadmap", "isCompleted": false },
+    { "id": 6, "categoryId": 2, "name": "Competitor analysis", "isCompleted": false },
+    { "id": 7, "categoryId": 3, "name": "Release marketing website", "isCompleted": false },
+    { "id": 8, "categoryId": 3, "name": "Release MVP", "isCompleted": false }
+  ]
+}
