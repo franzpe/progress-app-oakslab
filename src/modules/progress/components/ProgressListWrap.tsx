@@ -1,5 +1,6 @@
 import api from 'api/api';
 import { showBasicConfirmAlert } from 'components/confirmAlert/showAlert';
+import { MaterialIcon } from 'components/icons/MaterialIcon';
 import React, { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { useGetDataQuery } from '../hooks/useGetDataQuery';
 import { CategoryProgress, TasksByCategory } from '../types';
@@ -88,7 +89,14 @@ const ProgressListWrap = () => {
   };
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return (
+      <div>
+        Loading
+        <MaterialIcon type="outlined" size="big">
+          download_for_offline
+        </MaterialIcon>
+      </div>
+    );
   }
 
   return (
