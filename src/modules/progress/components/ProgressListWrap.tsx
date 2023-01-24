@@ -1,6 +1,6 @@
 import api from 'api/api';
 import { showBasicConfirmAlert } from 'components/confirmAlert/showAlert';
-import React, { ChangeEvent, useEffect, useMemo, useState } from 'react';
+import React, { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import { useGetDataQuery } from '../hooks/useGetDataQuery';
 import { CategoryProgress, TasksByCategory } from '../types';
 import ProgressList from './ProgressList';
@@ -10,27 +10,21 @@ const ProgressListWrap = () => {
   const [progressByCategory, setProgressByCategory] = useState<Record<number, CategoryProgress>>({});
   const [finalMessage, setFinalMessage] = useState('');
 
+  const completed = useMemo(
+    () =>
+      data.categories.length === Object.values(progressByCategory).filter(v => v.status === 'completed').length,
+    [progressByCategory, data.categories.length]
+  );
+
   useEffect(() => {
     if (completed && !finalMessage) {
       fetch('https://uselessfacts.jsph.pl/random.json')
         .then(response => response.json())
         .then(data => setFinalMessage(data.text));
     }
-  }, [progressByCategory]);
+  }, [progressByCategory, completed, finalMessage]);
 
-  useEffect(() => {
-    if (isSuccess) {
-      recordProgress();
-    }
-  }, [isSuccess, data]);
-
-  const completed = useMemo(
-    () =>
-      data.categories.length === Object.values(progressByCategory).filter(v => v.status === 'completed').length,
-    [progressByCategory]
-  );
-
-  const recordProgress = () => {
+  const recordProgress = useCallback(() => {
     let progress: Record<number, CategoryProgress> = {};
 
     for (const category of data.categories) {
@@ -47,7 +41,13 @@ const ProgressListWrap = () => {
     }
 
     setProgressByCategory(progress);
-  };
+  }, [data.categories, data.tasksByCategory]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      recordProgress();
+    }
+  }, [isSuccess, data, recordProgress]);
 
   const handleTaskChange = (categoryId: number, taskIdx: number) => async (e: ChangeEvent<HTMLInputElement>) => {
     const { checked } = e.target;
@@ -90,6 +90,7 @@ const ProgressListWrap = () => {
   if (isLoading) {
     return <div>Loading</div>;
   }
+
   return (
     <ProgressList
       data={data}
