@@ -21,7 +21,12 @@ const ProgressListWrap = () => {
     if (completed && !finalMessage) {
       fetch('https://uselessfacts.jsph.pl/random.json')
         .then(response => response.json())
-        .then(data => setFinalMessage(data.text));
+        .then(data => setFinalMessage(data.text))
+        .catch(() =>
+          setFinalMessage(
+            'The proper use of comments is to compensate for our failure to express ourself in code. Note that I used the word failure. I meant it. Comments are always failures. - Uncle Bob'
+          )
+        );
     }
   }, [progressByCategory, completed, finalMessage]);
 
