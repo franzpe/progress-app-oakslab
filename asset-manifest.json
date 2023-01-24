@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/progress-app-oakslab/static/css/main.c5074a79.css",
+    "main.js": "/progress-app-oakslab/static/js/main.ad85da10.js",
+    "static/js/787.6c108fe4.chunk.js": "/progress-app-oakslab/static/js/787.6c108fe4.chunk.js",
+    "static/media/MaterialIconsTwoTone-Regular.eot": "/progress-app-oakslab/static/media/MaterialIconsTwoTone-Regular.dae0d67b5b0a7332e0d5.eot",
+    "static/media/MaterialIconsTwoTone-Regular.otf": "/progress-app-oakslab/static/media/MaterialIconsTwoTone-Regular.1ac124f8c2620ca86850.otf",
+    "static/media/MaterialIconsRound-Regular.eot": "/progress-app-oakslab/static/media/MaterialIconsRound-Regular.f38c5a57b52cb6dda814.eot",
+    "static/media/MaterialIconsRound-Regular.otf": "/progress-app-oakslab/static/media/MaterialIconsRound-Regular.eef5282a2e59fca7c3b7.otf",
+    "static/media/MaterialIcons-Regular.ttf": "/progress-app-oakslab/static/media/MaterialIcons-Regular.fbbc016360f4b50975e2.ttf",
+    "static/media/MaterialIconsOutlined-Regular.eot": "/progress-app-oakslab/static/media/MaterialIconsOutlined-Regular.6e408e472d90198222ef.eot",
+    "static/media/MaterialIconsOutlined-Regular.otf": "/progress-app-oakslab/static/media/MaterialIconsOutlined-Regular.94f5fdef85538cbd160a.otf",
+    "static/media/MaterialIconsTwoTone-Regular.woff": "/progress-app-oakslab/static/media/MaterialIconsTwoTone-Regular.b49c708cb6f62d20fb57.woff",
+    "static/media/MaterialIconsSharp-Regular.eot": "/progress-app-oakslab/static/media/MaterialIconsSharp-Regular.cbc22e9676acf295231b.eot",
+    "static/media/MaterialIconsSharp-Regular.otf": "/progress-app-oakslab/static/media/MaterialIconsSharp-Regular.0af28946b49fa427ea09.otf",
+    "static/media/MaterialIconsTwoTone-Regular.woff2": "/progress-app-oakslab/static/media/MaterialIconsTwoTone-Regular.2c8903475ef5366ce366.woff2",
+    "static/media/MaterialIconsRound-Regular.woff": "/progress-app-oakslab/static/media/MaterialIconsRound-Regular.7ebd6258cbbc40b4f0e1.woff",
+    "static/media/MaterialIconsOutlined-Regular.woff": "/progress-app-oakslab/static/media/MaterialIconsOutlined-Regular.3dfc3dd20959a5bac99f.woff",
+    "static/media/MaterialIconsRound-Regular.woff2": "/progress-app-oakslab/static/media/MaterialIconsRound-Regular.6240b67b77d9bac167d7.woff2",
+    "static/media/MaterialIcons-Regular.woff": "/progress-app-oakslab/static/media/MaterialIcons-Regular.61bf3cad3150daa5af2d.woff",
+    "static/media/MaterialIconsSharp-Regular.woff": "/progress-app-oakslab/static/media/MaterialIconsSharp-Regular.7d6bf0009e0d61e7e6f3.woff",
+    "static/media/MaterialIconsOutlined-Regular.woff2": "/progress-app-oakslab/static/media/MaterialIconsOutlined-Regular.1c89d58269b6e0c5f3d9.woff2",
+    "static/media/MaterialIcons-Regular.eot": "/progress-app-oakslab/static/media/MaterialIcons-Regular.0ffc720f1bf788849cc8.eot",
+    "static/media/MaterialIconsSharp-Regular.woff2": "/progress-app-oakslab/static/media/MaterialIconsSharp-Regular.f78429ed0f939ede1ddb.woff2",
+    "static/media/MaterialIcons-Regular.woff2": "/progress-app-oakslab/static/media/MaterialIcons-Regular.a0cf4179f3139f862d55.woff2",
+    "index.html": "/progress-app-oakslab/index.html",
+    "main.c5074a79.css.map": "/progress-app-oakslab/static/css/main.c5074a79.css.map",
+    "main.ad85da10.js.map": "/progress-app-oakslab/static/js/main.ad85da10.js.map",
+    "787.6c108fe4.chunk.js.map": "/progress-app-oakslab/static/js/787.6c108fe4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5074a79.css",
+    "static/js/main.ad85da10.js"
+  ]
+}
